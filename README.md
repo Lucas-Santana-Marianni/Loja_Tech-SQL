@@ -2,7 +2,7 @@
 
 Este projeto representa um banco de dados simples para gerenciamento de produtos em uma loja voltada ao público gamer.
 
-## 📁 Banco de Dados: `lojaGamer`
+## 📁 Banco de Dados: `lojaTech`
 
 ### 🧾 Tabela: `Produtos`
 
