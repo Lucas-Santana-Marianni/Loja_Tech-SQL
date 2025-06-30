@@ -1,4 +1,4 @@
-create database lojaGamer;
+create database lojaTech;
 use lojaGamer;
 
 create table Produtos (
