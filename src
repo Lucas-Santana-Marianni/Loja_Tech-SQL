@@ -1,0 +1,44 @@
+create database lojaGamer;
+use lojaGamer;
+
+create table Produtos (
+id_loja int auto_increment primary key,
+nome varchar(100), 
+preco decimal(10, 2), 
+estoque int
+);
+
+insert into Produtos (nome, preco, estoque) values
+('Notebook', 3500.00, 10),
+('Mouse', 50.00, 200),
+('Teclado', 120.00, 150),
+('Monitor', 800.00, 30),
+('Cadeira Gamer', 1500.00, 5);
+ 
+ select * from Produtos;
+ 
+ select nome, preco from Produtos;
+ 
+ select nome, preco from Produtos
+ where preco > 1000;
+ 
+ select nome, estoque from Produtos
+ where estoque >= 30;
+ 
+ select nome, preco from Produtos
+ order by preco asc;
+ 
+ select nome, preco from Produtos
+ where nome like 'M%';
+ 
+ select * from Produtos 
+ where estoque between 10 and 100;
+ 
+ select * from Produtos
+ where nome not in ('Mouse', 'Teclado');
+ 
+ select * from Produtos
+ where nome like '%Gamer%';
+ 
+ select * from Produtos 
+ where preco = (select max(preco) from Produtos);
